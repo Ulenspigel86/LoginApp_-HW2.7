@@ -7,23 +7,18 @@
 
 import UIKit
 
-class UserBioViewController: UIViewController {
+final class UserBioViewController: UIViewController {
+    
+    @IBOutlet var userBioTextView: UITextView!
+    
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "\(user.person.fullName) Bio"
+        userBioTextView.backgroundColor = .clear
+        userBioTextView.textColor = .white
+        userBioTextView.text = user.person.bio
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

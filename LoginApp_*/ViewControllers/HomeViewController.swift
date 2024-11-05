@@ -11,7 +11,7 @@ final class HomeViewController: UIViewController {
     
    @IBOutlet var logoutButton: UIButton!
     
-    var user: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()

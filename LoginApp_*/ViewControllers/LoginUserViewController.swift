@@ -15,9 +15,6 @@ final class LoginUserViewController: UIViewController {
     
     private let user = User.getUser()
     
-    //private let loginUser = "Admin"
-    //private let loginPassword = "Admin"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         userNameTF.text = user.login
